@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GardenBed
+  - Plant
+  - Animal
   layers:
   - Default
   - TransparentFX

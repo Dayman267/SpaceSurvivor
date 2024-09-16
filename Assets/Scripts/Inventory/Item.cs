@@ -17,9 +17,21 @@ public class Item
         switch (itemType)
         {
             default:
-            case ItemType.Meat: return ItemAssets.Instance.meatSprite;
             case ItemType.Plant: return ItemAssets.Instance.plantSprite;
+            case ItemType.Meat: return ItemAssets.Instance.meatSprite;
             case ItemType.Seed: return ItemAssets.Instance.seedSprite;
+        }
+    }
+
+    public bool IsStackable()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Plant:
+            case ItemType.Meat:
+            case ItemType.Seed:
+                return true;
         }
     }
 }
